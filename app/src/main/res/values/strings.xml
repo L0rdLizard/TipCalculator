@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="input_your_bill_amount">Input your bill amount</string>
+    <string name="how_was_the_service">How was the service?</string>
+    <string name="amazing_tip_20">Amazing! Tip 20%</string>
+    <string name="pretty_good_tip_18">Pretty good! Tip 18%</string>
+    <string name="okay_tip_15">Okay. Tip 15%</string>
+    <string name="f_you_guys_tip_5">F you guys! Tip 5%</string>
+    <string name="tip_0">I\'ve seen Reservoir dogs. Tip 0%</string>
+    <string name="round_up_the_tip">Round up the tip?</string>
+    <string name="calculate">Calculate</string>
+    <string name="tip_amount">Tip Amount %s</string>
+</resources>
