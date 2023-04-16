@@ -21,12 +21,21 @@ class MainActivity : AppCompatActivity() {
     }
     fun calculateTip() {
         val stringInputField = binding.costOfService.text.toString()
-        val amount = stringInputField.toDouble()
-        if (amount <= 0){
-//            val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
-//            binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
-            binding.errorMessageZero.text = getString(R.string.error_message_zero)
+//        var amount = 0.0
+        if (stringInputField.isEmpty()){
+            binding.errorMessageZero.text = ""
+            binding.tipResult.text = ""
+            return
         }
+        val amount = stringInputField.toDouble()
+
+
+        if (amount <= 0){
+            binding.errorMessageZero.text = getString(R.string.error_message_zero)
+        } else {
+            binding.errorMessageZero.text = ""
+        }
+
         val selectedTip = binding.tipOptions.checkedRadioButtonId
         val tipPercent = when (selectedTip) {
             R.id.tip_option_twenty_percent -> 0.2
